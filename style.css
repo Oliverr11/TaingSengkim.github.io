@@ -1,0 +1,492 @@
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #131313;
+  color: white;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/my_cover.jpg);
+  background-size: cover;
+  background-position: right;
+  opacity: 0.5;
+  z-index: -1;
+  transition: 1s;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: space-around;
+  background-color: rgba(13, 13, 13, 0.5);
+}
+.header-name {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+}
+.header ul {
+  margin: 0;
+}
+
+.header ul li {
+  margin: 20px;
+  width: 100px;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.header ul li a {
+  border-radius: 10px;
+
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  width: 100%;
+}
+.header ul li a:hover {
+  color: #131313;
+  background-color: white;
+}
+.container {
+  display: flex;
+  transition: 1s;
+  align-items: center;
+  text-align: left;
+  height: 90vh;
+  margin-bottom: 50px;
+}
+.introduce {
+  color: white;
+
+  font-size: 65px;
+}
+button {
+  background: none;
+  transition: 0.5s;
+  font-size: 25px;
+  padding: 15px;
+  border-color: #fc9b00;
+  font-weight: bold;
+  color: white;
+
+  border-radius: 10px;
+}
+button:hover {
+  box-shadow: 1px 1px 10px #fc9b00;
+  transform: translateY(10px);
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  height: auto;
+  gap: 50px;
+}
+h2 {
+  font-size: 55px;
+  text-align: center;
+  letter-spacing: 10px;
+}
+#about-para {
+  width: 80%;
+}
+#about-para h2 {
+  margin-top: 0;
+}
+#about-para p,
+#about-para li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#about-para p {
+  text-align: justify;
+}
+
+#myPotrait {
+  width: 30%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+#myPotrait:hover {
+  box-shadow: 1px 1px 30px #fc9b00;
+}
+#about-list {
+  display: inline-block;
+  display: flex;
+}
+#about-list li::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #fc9b00;
+  margin-top: 5px;
+}
+
+#about-list li {
+  margin-right: 20px;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  margin: 10px;
+}
+ul li {
+  margin-left: 0;
+}
+
+.service-card {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 35px;
+  background-color: rgb(58, 58, 58);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.service-card:hover {
+  background-color: #fc9b00;
+  transform: translateY(-10px);
+}
+.my-work-card {
+  width: 320px;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+}
+.my-work-content,
+.service-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+}
+.my-work-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-details {
+  padding: 10px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(100, 0, 0, 0), rgb(255, 132, 0));
+  height: 100%;
+  transition: 1s;
+
+  display: flex;
+  padding-top: 180px;
+  flex-direction: column;
+  text-align: center;
+  top: 250px;
+}
+.work-details i {
+  font-size: 25px;
+  margin: 25px;
+}
+.work-details h3 {
+  margin: 0;
+  text-shadow: 1px 1px 15px black;
+}
+.my-work-card {
+  position: relative;
+}
+.my-work-card:hover .work-details {
+  top: -100px;
+}
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+}
+.contact-content button {
+  width: 70%;
+  height: 100%;
+}
+
+#contact-content-details {
+  display: block;
+  margin: 0;
+}
+.contact-content div {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.contact-content h3 {
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form input,
+#message-input {
+  background-color: rgb(58, 58, 58);
+  border-style: none;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 13px;
+  padding-left: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+form {
+  padding: 0;
+}
+.contact-container {
+  padding-top: 50px;
+}
+.contact-container i {
+  padding-right: 10px;
+  padding-left: 0;
+  font-size: 25px;
+}
+#message-input {
+  width: 100%;
+  height: 100px;
+}
+#submit-input {
+  height: 50px;
+  width: 25%;
+  background-color: #fc9b00;
+  color: white;
+  font-weight: bold;
+}
+#info,
+.introduce {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 14%;
+}
+
+.letter {
+  color: #fc9b00;
+}
+.font-thin {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: thin;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h3 {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+.icon {
+  font-size: 50px;
+}
+#footer {
+  width: 100%;
+  height: 100px;
+  margin-top: 80px;
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about-me {
+  scroll-margin-top: 30vh;
+}
+#services {
+  scroll-margin-top: 20vh;
+}
+#my-work {
+  scroll-margin-top: 20vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 475px) {
+}
+@media (min-width: 640px) {
+}
+
+@media (max-width: 1024px) {
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+  }
+
+  .container {
+    height: 70vh;
+
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 1061px) {
+  .overlay {
+    height: 70% !important;
+  }
+  .container {
+    height: 50vh !important;
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 1280px) {
+  .overlay {
+    height: 90%;
+  }
+  #info,
+  .introduce {
+    padding: 0px 10%;
+  }
+  .container {
+    height: 70vh;
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 0) and (max-width: 1358px) {
+  .contact-container {
+    justify-content: center;
+  }
+  .contact-content {
+    width: 100%;
+  }
+  .contact-content h3,
+  .contact-content > p {
+    text-align: center;
+  }
+  .contact-content #contact-content-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 25px;
+  }
+}
+@media (max-width: 1536px) {
+  .my-work-content,
+  .service-content {
+    justify-content: center;
+  }
+  .overlay {
+    transition: 1s;
+  }
+}
+
+@media (max-width: 968px) {
+  .about-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-work-content,
+  .service-content {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+  #about-para {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .header {
+    justify-content: space-around;
+    transition: 0.5s;
+  }
+  .header ul {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 50vw;
+    height: 0;
+    background-color: rgba(13, 13, 13, 0.9);
+    overflow: hidden;
+    transition: 1s;
+  }
+
+  .header ul li {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    transition: 0s;
+  }
+
+  .header ul li a {
+    display: block;
+    font-size: 35px;
+    transition: 0.2s;
+  }
+
+  #menu-toggle:checked ~ ul {
+    height: 100vh;
+  }
+
+  #menu-toggle:checked ~ ul li {
+    opacity: 1;
+  }
+  .overlay {
+    background-image: url("assets/my_cover2.jpg");
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    margin-top: 570px;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .introduce {
+    font-size: 55px;
+  }
+
+  #myPotrait {
+    width: 40%;
+  }
+}
+#menu-toggle {
+  display: none;
+}
